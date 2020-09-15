@@ -1,0 +1,59 @@
+\documentclass[letterpaper]{article}
+\usepackage{../dice}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+\renewcommand{\familydefault}{\sfdefault}
+\graphicspath{{../images/}}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\begin{minipage}{0.1\textwidth}
+    \makebox[\textwidth][c]{\includegraphics[width=10cm]{street}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.1\textwidth}
+    \makebox[\textwidth+7cm][c]{\includegraphics[width=6cm]{alley}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.1\textwidth}
+    \makebox[\textwidth+6cm][c]{\includegraphics[width=2cm]{hallway}}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+    \makebox[\textwidth][c]{\includegraphics[width=7cm]{apartmentA}}
+    \makebox[\textwidth][c]{\includegraphics[width=7cm]{apartmentB}}
+    \makebox[\textwidth][c]{\includegraphics[width=7cm]{apartmentA}}
+    \makebox[\textwidth][c]{\includegraphics[width=7cm]{apartmentB}}
+\end{minipage}
+
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\adjincludegraphics[width=16.5cm, trim={0 0 {.5\width} 0}, clip]{sewer}}
+\end{figure}
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\adjincludegraphics[width=16.5cm, trim={{.5\width} 0 0 0}, clip]{sewer}}
+\end{figure}
+
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=17cm]{cantina}}
+\end{figure}
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=7cm, angle=90]{droidshop}}
+\end{figure}
+
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=6cm, angle=90]{council}}
+\end{figure}
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=6cm]{armory}}
+\end{figure}
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=6cm]{kitchen}}
+\end{figure}
+\begin{figure}[p]
+    \makebox[\textwidth][c]{\includegraphics[width=6cm]{mainhall}}
+\end{figure}
+
+\end{document}

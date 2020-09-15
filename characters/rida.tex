@@ -1,0 +1,131 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{../dice}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{nopageno}
+
+\graphicspath{{../images/}}
+
+\begin{document}
+
+\begin{minipage}[t]{0.9\textwidth}
+    \begin{tabularx}{\textwidth}{l X l X l X}
+        Name: & Rida Tanu & Race: & Rodian & Gender: & Female \\
+        Background: & \multicolumn{5}{>{\hsize=3\hsize}X}{
+            Rida greq up hunting and still hunts. She may not be hunting bounties at the moment, but for her life itself is a hunt. Glory and treasure are the key to happiness.
+        }
+    \end{tabularx}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \hspace{-3.0cm}
+    \raisebox{-\height+4.0\baselineskip}{
+        \adjincludegraphics[width=0.5\textwidth, trim={0 {.5\height} 0 0}, clip]{rida_portrait}
+    }
+\end{minipage}
+
+
+\begin{center}
+    \makebox[\textwidth][c]{\includegraphics[width=.9\paperwidth]{attributes}}
+    \put(-503,33){\fontsize{24.88}{60}\selectfont 3}
+    \put(-428,33){\fontsize{24.88}{60}\selectfont 4}
+    \put(-350,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-275,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-200,33){\fontsize{24.88}{60}\selectfont 1}
+    \put(-124,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-48,33){\fontsize{24.88}{60}\selectfont 0}
+\end{center}
+
+\begin{center}
+    \makebox[\textwidth][c]{
+        \adjincludegraphics[width=.2\paperwidth, trim={0 {.5\height} {.5\width} 0}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} {.5\height} 0 0}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} 0 0 {.5\height}}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={0 0 {.5\width} {.5\height}}, clip]{combatstats}
+    }
+    \put(-495,30){\fontsize{24.88}{60}\selectfont 15}
+    \put(-370,30){\fontsize{24.88}{60}\selectfont 11}
+    \put(-240,28){\fontsize{24.88}{60}\selectfont 1}
+    \put(-192,28){\fontsize{24.88}{60}\selectfont 1}
+    \put(-89,28){\fontsize{24.88}{60}\selectfont 4}
+\end{center}
+
+\begin{center}
+\begin{tabular}{| c l c c | c l c c |}
+    \hline Career & Skill & Rank & Dice & 
+        Career & Skill & Rank & Dice \\ \hline
+    & Astrogation (Int) & 0 & \ability\ability & 
+        \multicolumn{4}{c|}{Combat} \\
+    $\star$ & Athletics (Br) & 0 & \ability\ability\ability & 
+        $\star$ & Brawl (Br) & 0 & \ability\ability\ability \\
+    & Charm (Pr) & 0 & \ability\ability & 
+        & Gunnery (Ag) & 0 & \ability\ability\ability\ability \\
+    $\star$ & Coercion (Will) & 0 & \ability & 
+		& Lightsaber (Br) & 0 & \ability\ability\ability \\
+    & Computers (Int) & 0 & \ability\ability & 
+		& Melee (Br) & 0 & \ability\ability\ability \\
+    & Cool (Pr) & 0 & \ability\ability & 
+		$\star$ & Ranged - Light (Ag) & 2 & \ability\ability\proficiency\proficiency \\
+    & Coordination (Ag) & 0 & \ability\ability\ability\ability & 
+		$\star$ & Ranged - Heavy (Ag) & 0 & \ability\ability\ability\ability \\
+    & Deception (Cun) & 0 & \ability\ability & 
+        \multicolumn{4}{c|}{Knowledge} \\
+    & Discipline (Will) & 0 & \ability & 
+        & Core Worlds (Int) & 0 & \ability\ability \\
+    & Leadership (Pr) & 0 & \ability\ability & 
+        & Education (Int) & 0 & \ability\ability \\
+    $\star$ & Mechanics (Int) & 0 & \ability\ability & 
+        & Lore (Int) & 0 & \ability\ability \\
+    & Medicine (Int) & 0 & \ability\ability & 
+        & Outer Rim (Int) & 0 & \ability\ability \\
+    & Negotiation (Pr) & 0 & \ability\ability & 
+        & Underworld (Int) & 0 & \ability\ability \\
+    $\star$ & Perception (Cun) & 0 & \ability & 
+        & Warfare (Int) & 0 & \ability\ability \\
+    $\star$ & Piloting–Planetary (Ag) & 0 & \ability\ability\ability\ability & 
+        & Xenology (Int) & 0 & \ability\ability \\
+    $\star$ & Piloting–Space (Ag) & 0 & \ability\ability\ability\ability & 
+		& & & \\
+    & Resilience (Br) & 0 & \ability\ability\ability & 
+		& & & \\
+    & Skulduggery (Cun) & 0 & \ability\ability & 
+		& & & \\
+    & Stealth (Ag) & 0 & \ability\ability\ability\ability & 
+		& & & \\
+    $\star$ & Streetwise (Cun) & 0 & \ability\ability & 
+		& & & \\
+    & Survival (Cun) & 1 & \ability\proficiency & 
+		& & & \\
+    $\star$ & Vigilance (Will) & 0 & \ability & & & & \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{l l | l l | l X}
+    Career: & Bounty Hunter & Specializations: & Gadgeteer & Talents: & Toughened (+2 wound threshold)
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{| c | c | c | c | c | X |}
+    \multicolumn{6}{c}{Weapons} \\ \hline
+    Name & Skill & Range & Damage & Crit & Special \\ \hline
+    Blaster Pistol & Ranged Light & Medium & 7 & 3 & Stun Setting, Jury Rigged (+1 Damage) \\
+    \hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{| c | X |}
+    \multicolumn{2}{c}{Equipment} \\ \hline
+    Name & Description \\ \hline
+    Armored Clothing & +1 Defense, +1 Soak \\
+    \hline
+\end{tabularx}
+\end{center}
+
+\end{document}

@@ -1,0 +1,132 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{../dice}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage{nopageno}
+
+\graphicspath{{../images/}}
+
+\begin{document}
+
+\begin{minipage}[t]{0.9\textwidth}
+    \begin{tabularx}{\textwidth}{l X l X l X}
+        Name: & Tala Nalle & Race: & Human & Gender: & Female \\
+        Background: & \multicolumn{5}{>{\hsize=3\hsize}X}{
+            Tala grew up on the streets, but she was lucky enough to be mentored by an excellent slicer. She lives for the thrill and feeling of power she gets slicing computer systems. It pays pretty well too.
+        }
+    \end{tabularx}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \hspace{-3.0cm}
+    \raisebox{-\height+4.0\baselineskip}{
+        \adjincludegraphics[width=0.5\textwidth, trim={0 {.5\height} 0 0}, clip]{tala_portrait}
+    }
+\end{minipage}
+
+
+\begin{center}
+    \makebox[\textwidth][c]{\includegraphics[width=.9\paperwidth]{attributes}}
+    \put(-503,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-428,33){\fontsize{24.88}{60}\selectfont 3}
+    \put(-350,33){\fontsize{24.88}{60}\selectfont 3}
+    \put(-275,33){\fontsize{24.88}{60}\selectfont 3}
+    \put(-200,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-124,33){\fontsize{24.88}{60}\selectfont 2}
+    \put(-48,33){\fontsize{24.88}{60}\selectfont 0}
+\end{center}
+
+\begin{center}
+    \makebox[\textwidth][c]{
+        \adjincludegraphics[width=.2\paperwidth, trim={0 {.5\height} {.5\width} 0}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} {.5\height} 0 0}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} 0 0 {.5\height}}, clip]{combatstats}
+        \adjincludegraphics[width=.2\paperwidth, trim={0 0 {.5\width} {.5\height}}, clip]{combatstats}
+    }
+    \put(-495,30){\fontsize{24.88}{60}\selectfont 12}
+    \put(-370,30){\fontsize{24.88}{60}\selectfont 12}
+    \put(-240,28){\fontsize{24.88}{60}\selectfont 0}
+    \put(-192,28){\fontsize{24.88}{60}\selectfont 0}
+    \put(-89,28){\fontsize{24.88}{60}\selectfont 3}
+\end{center}
+
+\begin{center}
+\begin{tabular}{| c l c c | c l c c |}
+    \hline Career & Skill & Rank & Dice & 
+        Career & Skill & Rank & Dice \\ \hline
+    & Astrogation (Int) & 0 & \ability\ability\ability & 
+        \multicolumn{4}{c|}{Combat} \\
+    & Athletics (Br) & 0 & \ability\ability & 
+        & Brawl (Br) & 0 & \ability\ability \\
+    & Charm (Pr) & 1 & \ability\proficiency & 
+        & Gunnery (Ag) & 0 & \ability\ability\ability \\
+    & Coercion (Will) & 0 & \ability\ability & 
+		& Lightsaber (Br) & 0 & \ability\ability \\
+    $\star$ & Computers (Int) & 1 & \ability\ability\proficiency & 
+		& Melee (Br) & 0 & \ability\ability \\
+    & Cool (Pr) & 1 & \ability\proficiency & 
+		& Ranged - Light (Ag) & 0 & \ability\ability\ability \\
+    $\star$ & Coordination (Ag) & 0 & \ability\ability\ability & 
+		& Ranged - Heavy (Ag) & 0 & \ability\ability\ability \\
+    $\star$ & Deception (Cun) & 0 & \ability\ability\ability & 
+        \multicolumn{4}{c|}{Knowledge} \\
+    & Discipline (Will) & 0 & \ability\ability & 
+        & Core Worlds (Int) & 0 & \ability\ability\ability \\
+    & Leadership (Pr) & 0 & \ability\ability & 
+        & Education (Int) & 0 & \ability\ability\ability \\
+    & Mechanics (Int) & 0 & \ability\ability\ability & 
+        & Lore (Int) & 0 & \ability\ability\ability \\
+    & Medicine (Int) & 0 & \ability\ability\ability & 
+        & Outer Rim (Int) & 0 & \ability\ability\ability \\
+    & Negotiation (Pr) & 0 & \ability\ability & 
+        $\star$ & Underworld (Int) & 0 & \ability\ability\ability \\
+    $\star$ & Perception (Cun) & 1 & \ability\ability\proficiency & 
+        & Warfare (Int) & 0 & \ability\ability\ability \\
+    & Piloting–Planetary (Ag) & 0 & \ability\ability\ability & 
+        & Xenology (Int) & 0 & \ability\ability\ability \\
+    $\star$ & Piloting–Space (Ag) & 0 & \ability\ability\ability & 
+		& & & \\
+    $\star$ & Resilience (Br) & 0 & \ability\ability & 
+		& & & \\
+    $\star$ & Skulduggery (Cun) & 1 & \ability\ability\proficiency & 
+		& & & \\
+    $\star$ & Stealth (Ag) & 1 & \ability\ability\proficiency & 
+		& & & \\
+    $\star$ & Streetwise (Cun) & 0 & \ability\ability\ability & 
+		& & & \\
+    & Survival (Cun) & 0 & \ability\ability\ability & 
+		& & & \\
+    $\star$ & Vigilance (Will) & 0 & \ability\ability & & & & \\
+    \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{l l | l l | l X}
+    Career: & Smuggler & Specializations: & Thief & Talents: & None
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{| c | c | c | c | c | X |}
+    \multicolumn{6}{c}{Weapons} \\ \hline
+    Name & Skill & Range & Damage & Crit & Special \\ \hline
+    Light Blaster Pistol & Ranged Light & Medium & 5 & 4 & Stun Setting \\
+    Vibroknife & Melee & Engaged & 1 & 2 & Pierce 2, Vicious 1 \\
+    \hline
+\end{tabularx}
+\end{center}
+
+\begin{center}
+\begin{tabularx}{0.8\textwidth}{| c | X |}
+    \multicolumn{2}{c}{Equipment} \\ \hline
+    Name & Description \\ \hline
+    Heavy Clothing & +1 Soak \\
+    \hline
+\end{tabularx}
+\end{center}
+
+\end{document}
