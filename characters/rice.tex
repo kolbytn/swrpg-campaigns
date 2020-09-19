@@ -1,132 +1,30 @@
-\documentclass[letterpaper]{article}
-
-\usepackage{tabularx}
-\usepackage{graphicx}
-\usepackage[export]{adjustbox}
-\usepackage{../dice}
-\usepackage[letterpaper, margin=0.5in]{geometry}
-\usepackage{nopageno}
+\documentclass{charactersheet}
 
 \graphicspath{{images/}}
 
 \begin{document}
 
-\begin{minipage}[t]{0.9\textwidth}
-    \begin{tabularx}{\textwidth}{l X l X l X}
-        Name: & Rice Brandall & Race: & Human & Gender: & Male \\
-        Background: & \multicolumn{5}{>{\hsize=3\hsize}X}{
-            Rice moved away from the core worlds as a young man on a humanitarian mission to help colonists on the fringe. Life has brought him down an unexpected path, but his heart hasn't changed.
-        }
-    \end{tabularx}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.5\textwidth}
-    \hspace{-3.0cm}
-    \raisebox{-\height+4.0\baselineskip}{
-        \adjincludegraphics[width=0.5\textwidth, trim={0 {.5\height} 0 0}, clip]{rice_portrait}
-    }
-\end{minipage}
+\makeheader[name={Rice Brandall}, race=Human, gender=Male, career=Colonist, specializations=Doctor, portrait=rice_portrait,
+    background={Rice moved away from the core worlds as a young man on a humanitarian mission to help colonists on the fringe. Life has brought him down an unexpected path, but his heart hasn't changed.}
+]
 
+\makeattributes[agility=3, intellect=3, presence=3]
 
-\begin{center}
-    \makebox[\textwidth][c]{\includegraphics[width=.9\paperwidth]{attributes}}
-    \put(-503,33){\fontsize{24.88}{60}\selectfont 2}
-    \put(-428,33){\fontsize{24.88}{60}\selectfont 3}
-    \put(-350,33){\fontsize{24.88}{60}\selectfont 3}
-    \put(-275,33){\fontsize{24.88}{60}\selectfont 2}
-    \put(-200,33){\fontsize{24.88}{60}\selectfont 2}
-    \put(-124,33){\fontsize{24.88}{60}\selectfont 3}
-    \put(-48,33){\fontsize{24.88}{60}\selectfont 0}
-\end{center}
+\makecombatstats[ranged=1, melee=1, soak=3]
 
-\begin{center}
-    \makebox[\textwidth][c]{
-        \adjincludegraphics[width=.2\paperwidth, trim={0 {.5\height} {.5\width} 0}, clip]{combatstats}
-        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} {.5\height} 0 0}, clip]{combatstats}
-        \adjincludegraphics[width=.2\paperwidth, trim={{.5\width} 0 0 {.5\height}}, clip]{combatstats}
-        \adjincludegraphics[width=.2\paperwidth, trim={0 0 {.5\width} {.5\height}}, clip]{combatstats}
-    }
-    \put(-495,30){\fontsize{24.88}{60}\selectfont 12}
-    \put(-370,30){\fontsize{24.88}{60}\selectfont 12}
-    \put(-240,28){\fontsize{24.88}{60}\selectfont 1}
-    \put(-192,28){\fontsize{24.88}{60}\selectfont 1}
-    \put(-89,28){\fontsize{24.88}{60}\selectfont 3}
-\end{center}
+\makeskills[charmCareer, coolCareer, deceptionCareer, leadershipCareer, medicineCareer, negotiationCareer, resilienceCareer, streetwiseCareer, coreworldsCareer, educationCareer, loreCareer, charmRank=1, computersRank=1, medicineRank=1, negotiationRank=1, rangedLightRank=1]
 
-\begin{center}
-\begin{tabular}{| c l c c | c l c c |}
-    \hline Career & Skill & Rank & Dice & 
-        Career & Skill & Rank & Dice \\ \hline
-    & Astrogation (Int) & 0 & \ability\ability\ability & 
-        \multicolumn{4}{c|}{Combat} \\
-    & Athletics (Br) & 0 & \ability\ability & 
-        & Brawl (Br) & 0 & \ability\ability \\
-    $\star$ & Charm (Pr) & 1 & \ability\ability\proficiency & 
-        & Gunnery (Ag) & 0 & \ability\ability\ability \\
-    & Coercion (Will) & 0 & \ability\ability & 
-		& Lightsaber (Br) & 0 & \ability\ability \\
-    & Computers (Int) & 1 & \ability\ability\proficiency & 
-		& Melee (Br) & 0 & \ability\ability \\
-    $\star$ & Cool (Pr) & 0 & \ability\ability\ability & 
-		& Ranged - Light (Ag) & 1 & \ability\ability\proficiency \\
-    & Coordination (Ag) & 0 & \ability\ability\ability & 
-		& Ranged - Heavy (Ag) & 0 & \ability\ability\ability \\
-    $\star$ & Deception (Cun) & 0 & \ability\ability & 
-        \multicolumn{4}{c|}{Knowledge} \\
-    & Discipline (Will) & 0 & \ability\ability & 
-        $\star$ & Core Worlds (Int) & 0 & \ability\ability\ability \\
-    $\star$ & Leadership (Pr) & 0 & \ability\ability\ability & 
-        $\star$ & Education (Int) & 0 & \ability\ability\ability \\
-    & Mechanics (Int) & 0 & \ability\ability\ability & 
-        $\star$ & Lore (Int) & 0 & \ability\ability\ability \\
-    $\star$ & Medicine (Int) & 1 & \ability\ability\proficiency & 
-        & Outer Rim (Int) & 0 & \ability\ability\ability \\
-    $\star$ & Negotiation (Pr) & 1 & \ability\ability\proficiency & 
-        & Underworld (Int) & 0 & \ability\ability\ability \\
-    & Perception (Cun) & 0 & \ability\ability & 
-        & Warfare (Int) & 0 & \ability\ability\ability \\
-    & Piloting–Planetary (Ag) & 0 & \ability\ability\ability & 
-        & Xenology (Int) & 0 & \ability\ability\ability \\
-    & Piloting–Space (Ag) & 0 & \ability\ability\ability & 
-		& & & \\
-    $\star$ & Resilience (Br) & 0 & \ability\ability & 
-		& & & \\
-    & Skulduggery (Cun) & 0 & \ability\ability & 
-		& & & \\
-    & Stealth (Ag) & 0 & \ability\ability\ability & 
-		& & & \\
-    $\star$ & Streetwise (Cun) & 0 & \ability\ability & 
-		& & & \\
-    & Survival (Cun) & 0 & \ability\ability & 
-		& & & \\
-    & Vigilance (Will) & 0 & \ability\ability & & & & \\
-    \hline
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabularx}{0.8\textwidth}{l l | l l | l X}
-    Career: & Colonist & Specializations: & Doctor & Talents: & Surgeon (+1 wound per medicine check)
-\end{tabularx}
-\end{center}
-
-\begin{center}
-\begin{tabularx}{0.8\textwidth}{| c | c | c | c | c | X |}
-    \multicolumn{6}{c}{Weapons} \\ \hline
-    Name & Skill & Range & Damage & Crit & Special \\ \hline
+\begin{weapons}
     Blaster Pistol & Ranged Light & Medium & 6 & 3 & Stun Setting \\
-    \hline
-\end{tabularx}
-\end{center}
+\end{weapons}
 
-\begin{center}
-\begin{tabularx}{0.8\textwidth}{| c | X |}
-    \multicolumn{2}{c}{Equipment} \\ \hline
-    Name & Description \\ \hline
+\begin{equipment}
     Armored Clothing & +1 Defense, +1 Soak \\
     Emergency Medpack & Removes default setback from medicine checks \\
-    \hline
-\end{tabularx}
-\end{center}
+\end{equipment}
+
+\begin{talents}
+    Doctor & Surgeon & +1 wound per medicine check \\
+\end{talents}
 
 \end{document}
